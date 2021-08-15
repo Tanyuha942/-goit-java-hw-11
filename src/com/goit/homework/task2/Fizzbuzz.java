@@ -1,11 +1,6 @@
-package com.goit.homework.Task2;
+package com.goit.homework.task2;
 
 class Fizzbuzz {
 
-  Runnable fizzBuzz = new Runnable() {
-    @Override
-    public void run() {
-      System.out.println("Start => fizzbuzz");
-    }
-  };
+  Runnable fizzBuzz = () -> System.out.println("Start => fizzbuzz");
 }

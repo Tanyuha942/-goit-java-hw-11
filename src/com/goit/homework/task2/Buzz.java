@@ -1,11 +1,6 @@
-package com.goit.homework.Task2;
+package com.goit.homework.task2;
 
 class Buzz {
 
-  Runnable buzz = new Runnable() {
-    @Override
-    public void run() {
-      System.out.println("Start => buzz");
-    }
-  };
+  Runnable buzz = () -> System.out.println("Start => buzz");
 }

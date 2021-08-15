@@ -1,4 +1,4 @@
-package com.goit.homework.Task2;
+package com.goit.homework.task2;
 
 class Numbers {
 

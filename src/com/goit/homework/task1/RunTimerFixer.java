@@ -1,8 +1,8 @@
-package com.goit.homework.Task1;
+package com.goit.homework.task1;
 
 public class RunTimerFixer {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
     /*
         Задание#1
         Напишите программу, которая каждую секунду отображает на экране данные о времени, прошедшем от начала сессии (запуска программы).
@@ -13,11 +13,12 @@ public class RunTimerFixer {
     System.out.print("Задание#1 \n--=====Start program=====--\n\n");
     TimerFixer timerFixer = new TimerFixer();
 
-    for (int i = 1; ; i++) {
-      timerFixer.timerStart.run();
-      if (i % 5 == 0) {
-        timerFixer.fiveSecondFixer.run();
+      for (int i = 1; ; i++) {
+
+          timerFixer.timerStart.run();
+        if (i % 5 == 0) {
+          timerFixer.fiveSecondFixer.run();
+        }
       }
     }
-  }
 }
